@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
 
     # 3.1 Handling missing values training set
-    check_result_train, dataset = handling_missing_values(data = train_set,
+    check_result_train, train_set = handling_missing_values(data = train_set,
                                                     col1 = config['predictors'][10], #pdays
                                                     col2 = config['predictors'][4], # balance
                                                     value_imputer1 = config['balance_imputation'],
